@@ -27,6 +27,7 @@
     * Only regenerate static files when they have changed (#142)
     * Allow arbitrary options to Pygments (#31)
     * Allow URL to be set via command line option (#147)
+    * Add svg liquid tag (and mime type) for embedding SVG images [github.com/dekellum]
   * Bug Fixes
     * Render highlighted code for non markdown/textile pages (#116)
     * Fix highlighting on Ruby 1.9 (#65)
