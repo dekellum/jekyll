@@ -12,7 +12,7 @@ module Jekyll
         ImageSize.new( fpng.read ).get_size
       end
       <<END
-<div style="text-align: center;">
+<div class="svg-object">
   <object data="#{@svg}" type="image/svg+xml" width="#{w}" height="#{h}">
     <img src="#{png}" width="#{w}" height="#{h}">
   </object>
