@@ -79,6 +79,7 @@ Gem::Specification.new do |s|
     lib/jekyll/static_file.rb
     lib/jekyll/tags/highlight.rb
     lib/jekyll/tags/include.rb
+    lib/jekyll/tags/svg.rb
     test/helper.rb
     test/source/_includes/sig.markdown
     test/source/_layouts/default.html
