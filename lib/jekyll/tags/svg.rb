@@ -8,8 +8,9 @@ module Jekyll
 
     def render(context)
       png = @svg.sub( /(\.svg)$/, '.png' )
-      ident = `identify #{png}`
-      w,h = [ $1, $2 ] if ident =~ /PNG (\d+)x(\d+)/
+      w,h = open( png, 'rb' ) do |fpng|
+        ImageSize.new( fpng.read ).get_size
+      end
       <<END
 <div style="text-align: center;">
   <object data="#{@svg}" type="image/svg+xml" width="#{w}" height="#{h}">

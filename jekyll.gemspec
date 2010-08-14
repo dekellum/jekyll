@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
 
   s.name              = 'jekyll'
   s.version           = '0.6.2'
-  s.date              = '2010-06-25'
+  s.date              = '2010-08-14'
   s.rubyforge_project = 'jekyll'
 
   s.summary     = "A simple, blog aware, static site generator."
@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency('classifier', [">= 1.3.1"])
   s.add_runtime_dependency('directory_watcher', [">= 1.1.1"])
   s.add_runtime_dependency('maruku', [">= 0.5.9"])
+  s.add_runtime_dependency('imagesize', [">= 0.1.1"])
 
   s.add_development_dependency('redgreen', [">= 4.2.1"])
   s.add_development_dependency('shoulda', [">= 4.2.1"])
